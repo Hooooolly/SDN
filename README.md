@@ -1,8 +1,11 @@
 # SDN
+Prerequisites: ryu, mininet, and behave
 
-These files should be outside of the Ryu folders which can be gotten from https://github.com/osrg/ryu
+For the best results download the Virtual Machine Image with Ryu and Mininet following the steps here https://github.com/osrg/ryu/wiki/OpenFlow_Tutorial 
 
-Once you have ryu and these files installed you are ready to run. 
-To launch Mininet use the command "sudo mn --mac --controller remote --switch ovsk"
-In a seperate window go to the folder which contains the .feature file and run "behave"
-This will run the ryu controller in mininet 
+Once the virtual machine is ready and running it is time to install the Behave function
+To do so run the command "pip install behave"
+If you have any issues the guide can be found here http://pythonhosted.org/behave/install.html
+
+Once you have all of this downloaded and running it is time to install my code. 
+This picture shows how the file structure should be set up
