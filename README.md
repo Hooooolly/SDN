@@ -12,12 +12,19 @@ This picture shows how the file structure should be set up
 
 ![screenshot 65](https://user-images.githubusercontent.com/25207378/29027615-0bb0d5f4-7b47-11e7-922d-037beca710b5.png)
 
+Once this is done, you are ready to run the code
+
 # Running the Code
-Now that everything is in place we can execute the code
+
 First we need to launch mininet to do so we run to prompt "sudo mn --mac --controller remote --switch ovsk"
 This will run an instance of mininet with a basic topology and no running controller
+
 If you have a custom topology you can run the command as shown in the picture, I have included our own as an example
 
-
+![screenshot 68](https://user-images.githubusercontent.com/25207378/29029230-96a5b300-7b4c-11e7-8c07-0bfec353f237.png)
 
 (note: your custom topology files will need to be located in the mininet/custom folder)
+
+Then open up a second terminal window and navigate to either "behave/simple_switch" or "behave/rest_firewall"
+Once you are in the folder containing the "steps" folder and a ".feature" file run the command "behave"
+
