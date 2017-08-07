@@ -30,3 +30,8 @@ Once you are in the folder containing the "steps" folder and a ".feature" file r
 
 ![screenshot 71](https://user-images.githubusercontent.com/25207378/29029921-efdd5c78-7b4e-11e7-8f21-f2aee133b25b.png)
 (ex: simple_switch)
+
+As you can see now, when you run a pingall test on the mininet network there is now a connection and all packets have been recieved
+
+# Collecting Data
+
