@@ -33,5 +33,4 @@ Once you are in the folder containing the "steps" folder and a ".feature" file r
 
 As you can see now, when you run a pingall test on the mininet network there is now a connection and all packets have been recieved
 
-# Collecting Data
-
+To exit out of the behave file simply enter "ctrl+c" and for mininet enter ">exit" 
