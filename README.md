@@ -28,3 +28,5 @@ If you have a custom topology you can run the command as shown in the picture, I
 Then open up a second terminal window and navigate to either "behave/simple_switch" or "behave/rest_firewall"
 Once you are in the folder containing the "steps" folder and a ".feature" file run the command "behave"
 
+![screenshot 71](https://user-images.githubusercontent.com/25207378/29029921-efdd5c78-7b4e-11e7-8f21-f2aee133b25b.png)
+(ex: simple_switch)
