@@ -1,15 +1,16 @@
 from behave import *
 from manager import main
 
-@given('1')
+@given('There is incoming traffic')
 def step_impl(context):
-	pass
+        pass
 
-@when('2')
+@when('A dangerous IP is detected')
 def step_impl(context):
-	main()
-	pass
+        pass
 
-@then('3')
+@then('Block traffic')
 def step_impl(context):
-	pass
+        main()
+        pass
+
