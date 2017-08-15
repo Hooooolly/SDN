@@ -2,14 +2,13 @@ from behave import *
 import os
 from manager import main
 
-@given('1')
+@given('There is incoming traffic')
 def step_impl(context):
-	pass
-
-@when('2')
+        pass
+@when('All traffic is coming from trusted sources')
 def step_impl(context):
-	main()
-	pass		
-@then('3')
+        pass
+@then('Allow all traffic')
 def step_impl(context):
-	pass
+        main()
+        pass                   
