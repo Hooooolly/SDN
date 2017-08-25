@@ -5,8 +5,8 @@ import socket
 @given('There is incoming traffic')
 def step_impl(context):
 
-        ip = socket.gethostbyname(socket.gethostname())
-        message = 'nmap -p 80 ' + ip
+        hostIP = socket.gethostbyname(socket.gethostname())
+        message = 'nmap -p 80 ' + hostIP
         recorded = os.popen(message).read()
         strOpen = "80/tcp open"
         Value = recorded.find(strOpen)
@@ -15,7 +15,11 @@ def step_impl(context):
 
 @when('A dangerous IP is detected')
 def step_impl(context):
-        pass
+
+        trustedIP =  " "
+        incomingIP = os.popen("sudo netstat -antp | grep 80 | cut -d: -f8 | sort -u").read()
+        if (trustedIP.find(incomingIP) == -1): #IP is not trusted
+                pass
 
 @then('Block traffic')
 def step_impl(context):
