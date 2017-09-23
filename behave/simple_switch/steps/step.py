@@ -2,6 +2,9 @@ from behave import *
 from manager import main
 import os
 import socket
+os.system("python ip.py")
+from ip import *
+
 @given('There is incoming traffic')
 def step_impl(context):
 
@@ -14,18 +17,15 @@ def step_impl(context):
         if (Value != -1):
                 pass
 
-
 @when('All traffic is coming from trusted sources')
 def step_impl(context):
 
-        #Check where the packet is coming from aginst a list of trusted sources
-        #If it is trusted then pass
-        trustedIP = " "
         incomingIP = os.popen("sudo netstat -antp | grep 80 | cut -d: -f8 | sort -u").read()
-        if (trustedIP.find(incomingIP) == 1): #IP is trusted            
+        if incomingIP not in BlackList:
                 pass
 
 @then('Allow all traffic')
 def step_impl(context):
         main()
         pass
+
